@@ -1,0 +1,379 @@
+/* General styles - start */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    min-height: 2500px;
+}
+
+
+p {
+    line-height: 1.5em;
+    font-weight: 300;
+}
+
+h2 {
+    text-align: left;
+    font-weight: 300;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+section {
+    overflow: auto;
+    padding: 60px 0;
+}
+
+
+/* General styles - stop */
+
+
+/* Main menu styles - start */
+
+#main-nav {
+    background-color: #f0f0f0;
+    border: none;
+}
+
+#main-nav ul {
+    text-align: right;
+}
+
+#main-nav ul .menu-item {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+#main-nav ul .menu-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+#main-nav ul .menu-item a:hover {
+    color: #1ac056;
+}
+
+
+/* after scroll */
+
+#main-nav.scroll {
+    background-color: #fff;
+}
+
+#main-nav.scroll ul .menu-item a {
+    color: #1ac056;
+}
+
+#main-nav.scroll ul .menu-item a:hover {
+    color: #1a1918;
+}
+
+
+/* Main menu styles - stop */
+
+
+/* Main header styles  start */
+
+#main-header {
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/img/header-background.jpg);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+#main-header .header-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto', sans-serif
+}
+
+#main-header .header-caption h1 {
+    font-size: 4em;
+    font-weight: 300;
+}
+
+#main-header .header-caption h2 {
+    font-size: 3em;
+    font-weight: 300;
+}
+
+
+/* Main header styles  stop */
+
+
+/* About section styles - start */
+
+#about {
+    background-color: #f9fcfe;
+}
+
+#about .container .row {
+    margin: 0;
+}
+
+#about .container .row figure {
+    text-align: center;
+}
+
+#about .container .row figure .about-img {
+    max-height: 350px;
+    border: 10px solid #fff;
+    border-radius: 10px;
+}
+
+#about .container .row p:first-child {
+    margin-top: 0;
+}
+
+
+/* About section styles - stop */
+
+
+/* Skills section - start */
+
+#skills {
+    -webkit-box-shadow: inset 0px 6px 10px -2px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: inset 0px 6px 10px -2px rgba(0, 0, 0, 0.52);
+    box-shadow: inset 0px 6px 10px -2px rgba(0, 0, 0, 0.52);
+}
+
+#skills>p {
+    text-align: center;
+}
+
+#skills .skills-icons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#skills .container .row {
+    margin: 0;
+}
+
+#skills .skills-icons figure {
+    display: inline-block;
+}
+
+#skills .container .skills-icons figure figcaption {
+    margin-top: 10px;
+    padding-right: 15px;
+}
+
+
+/* Skills section - stop */
+
+
+/* Portfolio section - start */
+
+#portfolio .portfolio-items {
+    font-size: 0;
+    text-align: center;
+}
+
+#portfolio .portfolio-items [class*="col-"] {
+    padding: 0;
+}
+
+#portfolio .portfolio-item {
+    height: 350px;
+    font-size: initial;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    /* jak obejść białe paski pomiędzy elementami?
+    1- usunąć puste znaki (niezalecane)
+    2- google > remove white spaces inline-block - reset wielkości fonta: dla parenta - font-size: 0, dla childa font-size: initial
+    */
+}
+
+#portfolio .portfolio-item .portfolio-item-mask {
+    background-color: rgba(33, 59, 80, 0.8);
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    transition: all .3s;
+}
+
+#portfolio .portfolio-item .portfolio-item-mask:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-item-mask .portfolio-content {
+    border: 1px solid #fff;
+    width: 95%;
+    height: 95%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+}
+
+#portfolio .portfolio-item .portfolio-item-mask .portfolio-content .portfolio-content-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 5px;
+}
+
+#portfolio .portfolio-item .portfolio-item-mask .portfolio-content .portfolio-content-inner a {
+    color: #fff;
+    transition: all .3s;
+    padding: 5px;
+}
+
+#portfolio .portfolio-item .portfolio-item-mask .portfolio-content .portfolio-content-inner a:hover {
+    color: #1ac056;
+}
+
+#portfolio-item-1 {
+    background-image: url(../img/img/portfolio1.jpg)
+}
+
+#portfolio-item-2 {
+    background-image: url(../img/img/portfolio2.jpg)
+}
+
+#portfolio-item-3 {
+    background-image: url(../img/img/portfolio4.jpg)
+}
+
+
+/* Portfolio section - stop */
+
+
+/* Contact section - start*/
+
+
+/* Contact section - start*/
+
+#contact {
+    background-color: #213b50;
+    ;
+    color: #fff;
+    text-decoration: none;
+    padding: 40px 60px;
+}
+
+#contact h2 {
+    text-align: left;
+    margin-top: 0;
+}
+
+#contact address {
+    font-style: normal;
+    margin: auto;
+}
+
+#contact address a {
+    color: #1ac056;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+#contact address a:hover {
+    color: #fff;
+}
+
+form {
+    padding-top: 60px;
+}
+
+form input[type='text'],
+form input[type='email'],
+form textarea {
+    margin-bottom: 15px;
+    background-color: #2b4a64;
+    color: #fff;
+    padding: 5px;
+    padding-left: 10px;
+    border: 0;
+    position: relative;
+    width: 100%;
+    outline: none;
+}
+
+form input[type='text']:focus,
+form input[type='email']:focus,
+form textarea:focus {
+    background-color: #4c6f8d;
+}
+
+form input[type="submit"] {
+    background-color: #1ac056;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+    padding: 10px;
+    color: #fff;
+    border: 0;
+    float: right;
+    transition: all .3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #1ac056;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.4em;
+}
+
+.social-icons a:hover {
+    color: #213b50;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+
+/* Contact section - start*/
+
+
+/* Footer - start*/
+
+footer {
+    margin-top: 0;
+    font-size: 1.2em;
+    padding: 5px;
+    color: #fff;
+    background-color: #152e40;
+    padding-left: 55px;
+}
+
+footer p {
+    text-align: left;
+    margin: 0;
+}
+
+
+/* Footer - stop*/
