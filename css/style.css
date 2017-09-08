@@ -41,11 +41,11 @@ section {
     padding: 60px 0;
     /* box-shadow: 0px 5px 10px #888888;*/
 }
-
+/*
 #product-menu {
     height: 50px;
     background-color: red;
-}
+}*/
 
 
 /* General styles - stop */
@@ -89,6 +89,7 @@ section {
 
 .navbar-default .navbar-nav>li>a:hover {
     border-bottom: 2px solid #046b9c;
+    color: #046b9c;
 }
 
 
@@ -108,7 +109,7 @@ section {
 }
 
 .nav>li.dropdown.open .dropdown-menu .first-stage-drop {
-    padding: 10px 0px;
+    padding-top: 100px;
 }
 
 .dropdown-menu>li {
@@ -143,6 +144,9 @@ section {
 }
 */
 
+#content{
+    margin-top: 50px;
+}
 
 /* 4-column-slide stylesheet start*/
 
@@ -200,12 +204,14 @@ section {
 #background-4 {
     background-image: url(http://ocs-pl.oktawave.com/v1/AUTH_2887234e-384a-4873-8bc5-405211db13a2/spidersweb/2016/08/google-streetview.jpg);
 }
-
+.site-main-content>h2{
+    margin-top: 50px;
+}
 .carousel-product-demo {
     width: 100%;
     height: 470px;
-    /*  background-position: center;
-    background-size: cover;*/
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
     height: 500px;
     background-image: url(../img/carousel.png)
@@ -216,6 +222,7 @@ section {
 
 
 /* 4-column-slide stylesheet stop*/
+
 
 .news-panel {
     width: 100%;
@@ -251,6 +258,7 @@ section {
 #contact address {
     font-style: normal;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 #contact address a {
@@ -263,9 +271,11 @@ section {
     color: #fff;
 }
 
-form .row{
+form .row {
     margin: 0;
 }
+
+
 /*form>div:nth-child(2) {
     margin: 0;
     display: block;
@@ -330,3 +340,12 @@ footer p {
 
 
 /* Footer - stop*/
+
+
+/* Media queries */
+
+@media(max-width:992px){
+    .news-section{
+    display: none;
+}
+}
